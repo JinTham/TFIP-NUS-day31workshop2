@@ -1,0 +1,9 @@
+<h2>Please Select</h2>
+<div>
+    <table>
+        <tr *ngFor="let item of itemList;let i = index">
+            <td>{{item.description}}</td>
+            <td><button (click)="addItem(i)">Add</button></td>
+        </tr>
+    </table>
+</div>

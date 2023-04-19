@@ -1,0 +1,12 @@
+<h2>My Cart</h2>
+
+<div>
+    <table>
+        <tr *ngFor="let shopItem of shoppingCart; let i = index">
+            <td>{{shopItem.item.description}}</td>
+            <td>,</td>
+            <td>quantity: {{shopItem.quantity}}</td>
+            <td><button type="button" (click)="removeItem(i)">Remove</button></td>
+        </tr>
+    </table>
+</div>
